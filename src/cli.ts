@@ -302,7 +302,7 @@ const program = new Command();
 program
   .name("cursor-memory")
   .description("Local-first persistent memory for Cursor AI")
-  .version("1.0.1", "-v, --version");
+  .version("1.0.2", "-v, --version");
 
 program
   .command("setup")

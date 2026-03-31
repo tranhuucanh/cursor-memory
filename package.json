@@ -1,6 +1,6 @@
 {
   "name": "cursor-memory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Persistent, searchable memory for Cursor AI — You control what your AI remembers.",
   "type": "module",
   "main": "dist/index.js",
