@@ -49,7 +49,7 @@ The workarounds make it worse:
 ## ✨ See It in Action
 
 <div align="center">
-  <video src="images/cursor-memory-demo.mp4" width="100%" controls></video>
+  <video src="hhttps://github.com/user-attachments/assets/a6bcb5e2-15d8-4533-8240-56d6ee4d70f6" controls width="100%"></video>
 </div>
 
 ---
