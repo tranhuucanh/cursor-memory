@@ -1,0 +1,66 @@
+{
+  "name": "cursor-memory",
+  "version": "1.0.0",
+  "description": "Persistent, searchable memory for Cursor AI — You control what your AI remembers.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "cursor-memory": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "cursor",
+    "cursor-ide",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ai-memory",
+    "persistent-memory",
+    "semantic-search",
+    "cursor-memory",
+    "cursor-ai-memory",
+    "cursor-ide-memory",
+    "cursor-persistent-memory",
+    "cursor-semantic-search",
+    "cursor-searchable-memory",
+    "embeddings"
+  ],
+  "files": [
+    "dist/",
+    "images/",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": {
+    "name": "Tran Huu Canh (0xTh3OKrypt)",
+    "email": "tranhuucanh39@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tranhuucanh/cursor-memory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tranhuucanh/cursor-memory/issues"
+  },
+  "homepage": "https://github.com/tranhuucanh/cursor-memory#readme",
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@modelcontextprotocol/sdk": "^1.28.0",
+    "better-sqlite3": "^11.10.0",
+    "commander": "^14.0.3",
+    "sqlite-vec": "^0.1.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.19.15",
+    "typescript": "^5.9.3"
+  }
+}
