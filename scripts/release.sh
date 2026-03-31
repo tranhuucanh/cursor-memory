@@ -30,14 +30,14 @@ if [ -n "$(git status --porcelain)" ]; then
     exit 1
 fi
 
-# Update version in package.json
-echo "📝 Updating package.json version to $VERSION..."
+# Update version in package.json and src/cli.ts
+echo "📝 Updating version to $VERSION..."
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    # macOS
     sed -i '' "s/\"version\": \".*\"/\"version\": \"$VERSION\"/" package.json
+    sed -i '' "s/\.version(\".*\",/.version(\"$VERSION\",/" src/cli.ts
 else
-    # Linux
     sed -i "s/\"version\": \".*\"/\"version\": \"$VERSION\"/" package.json
+    sed -i "s/\.version(\".*\",/.version(\"$VERSION\",/" src/cli.ts
 fi
 
 # Verify version was updated
@@ -57,7 +57,7 @@ echo ""
 
 # Commit version changes
 echo "💾 Committing version update..."
-git add package.json
+git add package.json src/cli.ts
 git commit -m "chore: bump version to $VERSION" || echo "Nothing to commit"
 
 # Create tag
