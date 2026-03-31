@@ -7,7 +7,7 @@
 **Persistent, searchable memory for Cursor AI — You control what your AI remembers.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node Version](https://img.shields.io/badge/node-%3E%3D18.17.0-brightgreen)](https://nodejs.org)
+[![Node Version](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
 [![npm](https://img.shields.io/badge/npm-cursor--memory-green.svg)](https://www.npmjs.com/package/cursor-memory)
 [![npm downloads](https://img.shields.io/npm/dt/cursor-memory)](https://www.npmjs.com/package/cursor-memory)

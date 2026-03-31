@@ -13,6 +13,7 @@ import path from "node:path";
 import os from "node:os";
 import { execSync } from "node:child_process";
 import readline from "node:readline";
+import { loadTransformers } from "./load-transformers.js";
 
 const DATA_DIR = path.join(os.homedir(), ".cursor-memory");
 const DB_PATH = path.join(DATA_DIR, "memory.db");
@@ -232,7 +233,7 @@ async function reEmbedAll(modelKey: string, totalCount: number): Promise<void> {
   process.stdout.write(`  ⏳ Re-embedding ${totalCount} memories...\n`);
   process.stdout.write(`     ${progressBar(0, totalCount)}`);
 
-  const { pipeline, env } = await import("@huggingface/transformers");
+  const { pipeline, env } = await loadTransformers();
   (env as any).cacheDir = MODELS_DIR;
   const extractor = await pipeline("feature-extraction", model.huggingface, {
     dtype: "q8" as any,
@@ -424,7 +425,7 @@ program
     if (!isModelDownloaded(modelKey)) {
       process.stdout.write(`  ⏳ Downloading model "${modelKey}" (${model.size})...`);
       try {
-        const { pipeline, env } = await import("@huggingface/transformers");
+        const { pipeline, env } = await loadTransformers();
         (env as any).cacheDir = MODELS_DIR;
         await pipeline("feature-extraction", model.huggingface, {
           dtype: "q8" as any,

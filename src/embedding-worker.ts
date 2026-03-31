@@ -9,6 +9,7 @@ import { parentPort } from "node:worker_threads";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
+import { loadTransformers } from "./load-transformers.js";
 
 const DATA_DIR = path.join(os.homedir(), ".cursor-memory");
 const MODELS_DIR = path.join(DATA_DIR, "models");
@@ -40,7 +41,7 @@ let extractor: any = null;
 
 async function init() {
   try {
-    const { pipeline: createPipeline, env } = await import("@huggingface/transformers");
+    const { pipeline: createPipeline, env } = await loadTransformers();
     env.cacheDir = MODELS_DIR;
 
     const modelId = getModelId();
