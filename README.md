@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="images/cursor-memory.png" alt="cursor-memory" width="180">
+<img width="180" alt="cursor-memory" src="https://github.com/user-attachments/assets/1ebad884-73d7-423e-b04d-86b74fdd44e4" />
 
 # cursor-memory
 
@@ -167,19 +167,19 @@ cursor-memory --help     # Show all commands
 ### 💾 Architecture
 
 <p align="center">
-  <img src="images/architecture.svg" alt="Architecture" width="100%">
+  <img width="100%" alt="Architecture" src="https://github.com/user-attachments/assets/ce99fdff-854f-408c-8ab0-c4010cfb1493" />
 </p>
 
 ### 💾 Save & Search Flow
 
 <p align="center">
-  <img src="images/save_and_search.svg" alt="Save and Search Flow" width="100%">
+  <img alt="Save and Search Flow" width="100%" src="https://github.com/user-attachments/assets/b6761640-9172-4ca0-b53f-2d1adb7c6469" />
 </p>
 
 ### 📁 Scope Isolation
 
 <p align="center">
-  <img src="images/scope_isolation.svg" alt="Scope Isolation" width="100%">
+  <img alt="Scope Isolation" width="100%" src="https://github.com/user-attachments/assets/ac90d05a-2ae9-462d-912e-e284d5dc44d5" />
 </p>
 
 ---
