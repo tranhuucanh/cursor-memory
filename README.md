@@ -338,7 +338,7 @@ MIT — see [LICENSE](LICENSE).
 
 **Built with ❤️ for developers who are tired of repeating themselves to AI**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tranhuucanh/cursor-memory&type=Date&t=89)](https://star-history.com/#tranhuucanh/cursor-memory&Date)
+[![Star History Chart](https://api.star-history.com/image?repos=tranhuucanh/cursor-memory&type=date&legend=top-left)](https://www.star-history.com/?repos=tranhuucanh%2Fcursor-memory&type=date&legend=top-left)
 
 [⬆ Back to top](#-cursor-memory)
 
