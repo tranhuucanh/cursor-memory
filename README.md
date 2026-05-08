@@ -104,8 +104,9 @@ The workarounds make it worse:
 
 ### Prerequisites
 
-- **Node.js** ≥ 18.17 — [download](https://nodejs.org)
-- **C++ compiler** — most systems already have this (Xcode CLI on Mac, `build-essential` on Ubuntu, VS Build Tools on Windows)
+- **Node.js** — Node 20, 22, or 24 LTS recommended ([download](https://nodejs.org))
+  - Native modules ship prebuilt binaries for these versions, no build tools required.
+- **C++ compiler** *(optional)* — only needed as a fallback for non-LTS Node versions (Xcode CLI on Mac, `build-essential` on Ubuntu, VS Build Tools on Windows).
 
 ### ⚡ 2-minute setup
 
@@ -227,9 +228,26 @@ If auto-config failed, manually add MCP server in Cursor:
 </details>
 
 <details>
-<summary><b>⚠️ Node.js version mismatch</b></summary>
+<summary><b>⚠️ Node.js version mismatch / "unsupported Node.js version"</b></summary>
 
-Native modules are compiled for a specific Node version. If you switch versions:
+cursor-memory requires Node **20, 22, or 24 LTS** — these are the versions that ship with prebuilt native binaries (`better-sqlite3`). Other versions may fail to install.
+
+Check your version:
+
+```bash
+node -v
+```
+
+If you're on a non-LTS version (18, 19, 21, etc.), install an LTS via [nvm](https://github.com/nvm-sh/nvm):
+
+```bash
+nvm install 22
+nvm use 22
+npm install -g cursor-memory
+cursor-memory setup
+```
+
+If you switched Node versions after installing, just reinstall:
 
 ```bash
 npm install -g cursor-memory

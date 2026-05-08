@@ -28,11 +28,11 @@ interface ModelDef {
 }
 
 const MODELS: Record<string, ModelDef> = {
-  small:  { id: "small",  huggingface: "Xenova/multilingual-e5-small", size: "~70MB",  description: "Lightweight, fast. Good for low-spec machines" },
-  medium: { id: "medium", huggingface: "Xenova/multilingual-e5-base",  size: "~290MB", description: "Balanced accuracy and speed (recommended)" },
-  large:  { id: "large",  huggingface: "Xenova/multilingual-e5-large", size: "~550MB", description: "Best accuracy, slightly more RAM usage" },
+  small:  { id: "small",  huggingface: "Xenova/multilingual-e5-small", size: "~50MB",  description: "Lightweight, fast. Good for low-spec machines" },
+  medium: { id: "medium", huggingface: "Xenova/multilingual-e5-base",  size: "~115MB", description: "Good balance of speed and accuracy" },
+  large:  { id: "large",  huggingface: "Xenova/multilingual-e5-large", size: "~270MB", description: "Best accuracy (recommended)" },
 };
-const DEFAULT_MODEL = "medium";
+const DEFAULT_MODEL = "large";
 
 interface AppConfig {
   model: string;
